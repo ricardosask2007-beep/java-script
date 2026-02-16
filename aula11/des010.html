@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacionalidade</title>
+</head>
+<body>
+    <h1>PAÍS</h1>
+    <input type="text" name="txtp" id="txtp">
+    <input type="button" value="enviar" onclick="pais()">
+    <div id="res">
+        onde vivo
+    </div>
+
+    <script>
+        function pais() {
+        let p = document.querySelector('#txtp').value
+        let res = document.querySelector('#res')
+
+        res.innerHTML = `Vivendo em ${p}`
+
+        if (p == 'Brasil') {
+            res.innerHTML = 'Sou Brasileiro'
+        } else {
+           res.innerHTML =  'Sou estrangeiro'
+        }
+    }
+    </script>
+</body>
+</html>
