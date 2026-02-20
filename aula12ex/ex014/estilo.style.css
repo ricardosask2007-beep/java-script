@@ -1,0 +1,38 @@
+@charset "UTF-8";
+
+body {
+    background-color: rgb(54, 118, 255);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    color: white;
+    text-align: center;
+}
+
+section{
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    width: 500px;
+    margin: auto;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.363);
+}
+
+div {
+    text-align: center;
+    padding: 5px;
+}
+
+section div#foto > img{
+    width: 300px;      /* tamanho */
+    height: 300px;     /* deixa quadrado */
+    border-radius: 50%; /* deixa redondo */
+    object-fit: cover;  /* corta a imagem sem deformar */
+}
+
+footer {
+    color: white;
+    text-align: center;
+    font-style: italic;
+}
